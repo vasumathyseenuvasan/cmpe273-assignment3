@@ -216,7 +216,7 @@ func callUberRequestAPI(startLat float64, startLng float64, endLat float64, endL
     fmt.Println("error in post request line 226")
   }
   // O Auth token here
-  req.Header.Add("Authorization", "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzY29wZXMiOlsiaGlzdG9yeSIsInByb2ZpbGUiLCJyZXF1ZXN0IiwiaGlzdG9yeV9saXRlIiwiZGVsaXZlcnkiLCJyZXF1ZXN0X3JlY2VpcHQiLCJkZWxpdmVyeV9zYW5kYm94Il0sInN1YiI6IjBhM2RmZmU4LWM0ZDYtNDkyMS04Mzc1LTE5Mjk5ODczOGUwNSIsImlzcyI6InViZXItdXMxIiwianRpIjoiODAyZDdiNTEtZDZmNy00ODAxLTg4OGEtZTY3MGQyZmE0MTc4IiwiZXhwIjoxNDQ5ODgzODEyLCJpYXQiOjE0NDcyOTE4MTIsInVhY3QiOiIyYWF4TUdJRVBHN3VmMGdkVU9RWTYxNkZkbFpyQVoiLCJuYmYiOjE0NDcyOTE3MjIsImF1ZCI6IktEUGxfOGJVZkkzbFZjcWJpV3NhcS1XbXVvMlBYTGJnIn0.ZULbUR_ez_OJp4aWi1cIEnTWiIi4fL4nLR62JqKCppTF3JV1QdZ4aVUOWL5SnilfGxVjdKrr-O0il51fVVLH3P8TUkXSqUaZODlDO_Ilm_EFFvMosyJuxbRHxRsRhTRNGTotdaq7yqk_RiMn8LwFmPUl-4rJFiR583v0MaI8coindvO13RuhQoxE7Q4UylKVGke9moxJt_ek4V1rvg2KttBeT7zwawSbqqdKFLMP2poDY0Z7KmzSo5wwkIuf9zTROsjo6Uni4maD52WBAvC3Sg__HIyVxgP1LzqcRBB2IqUz1_U6dKdo3gszGD2jVM1IsF1DLAks6ue8MZqIRUl8TA")
+  req.Header.Add("Authorization", "******")
   req.Header.Add("Content-Type", "application/json")
   client := &http.Client{}
   response, err := client.Do(req)
