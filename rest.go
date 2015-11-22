@@ -152,6 +152,8 @@ func delLocation(rw http.ResponseWriter, req *http.Request, p httprouter.Params)
 
 func callGoogleAPI(googReq *AddLocationRequest) *GoogleResponse{
 address := strings.Replace(googReq.Address, " ", "+", -1)
+if(address!=""){
+   address=strings.Replace(address,"&","and",-1)}
 city := strings.Replace(googReq.City, " ", "+", -1)
 state := strings.Replace(googReq.State, " ", "+", -1)
 zip := strings.Replace(googReq.Zip, " ", "+", -1)
